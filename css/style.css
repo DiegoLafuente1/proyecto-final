@@ -111,6 +111,7 @@ a {
 
 #sectionLocal .imagenesLocal {
     display: flex;
+    margin-top: 20px;
 }
     
 #sectionLocal .imagenesLocal img {
