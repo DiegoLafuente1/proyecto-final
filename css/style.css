@@ -160,6 +160,26 @@ a {
     font-weight: 600;
 }
 
+.sobre-nosotros {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.valoracion-clientes .contenedor-clientes {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.valoracion-clientes .valoracion-enviar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+}
+
 #footer {
     width: 100%;
     background-color: rgb(187, 187, 187);
@@ -209,3 +229,12 @@ a {
         padding: 25px 0px;
     }
 }
+
+@media (max-width: 768px) {
+    .valoracion-clientes .contenedor-clientes {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }   
+}
+   
