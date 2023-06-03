@@ -181,6 +181,17 @@ a {
     color: black;
 }
 
+.carrousel-menu {
+    width: 1000px;
+    height: 550px;
+    margin-left: 430px;
+}
+
+.carrousel-menu .menu-promo {
+    display: flex;
+    justify-content: center;
+}
+
 #footer {
     width: 100%;
     background-color: rgb(187, 187, 187);
@@ -241,9 +252,10 @@ a {
 
 @media (max-width: 768px) {
     .container-form {
-        width: 100%;
+        width: 90%;
         max-width: 768px;
-        margin: 10px;
+        margin-left: 10px;
+        margin-right: 0px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
