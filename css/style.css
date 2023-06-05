@@ -95,9 +95,8 @@ a {
     margin-bottom: 40px;
 }
 
-.container-form form textarea {
+.container-form form .textarea {
     max-width: 550px;
-    min-width: 500px;
     max-height: 150px;
     min-height: 180px;
 }
@@ -111,6 +110,7 @@ a {
 
 #sectionLocal .imagenesLocal {
     display: flex;
+    margin-top: 20px;
 }
     
 #sectionLocal .imagenesLocal img {
@@ -136,15 +136,17 @@ a {
     flex-direction: column;
     gap: 5rem;
 }
-.buscador .marcas {
-    background-color: aqua;
-    margin-top: 200px;
+.buscador .marcas ul li {
+    list-style-type: none;
+    margin-top: 10px;
+    
 }
 
 .buscador .productos-tienda {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    margin-bottom: 10px;
 }
 
 .detalles-producto {
@@ -157,6 +159,37 @@ a {
     display: flex;
     justify-content: center;
     font-weight: 600;
+}
+
+.sobre-nosotros {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.valoracion-clientes .contenedor-clientes {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.valoracion-clientes .valoracion-enviar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.carrousel-menu {
+    width: 1000px;
+    height: 550px;
+    margin-left: 430px;
+}
+
+.carrousel-menu .menu-promo {
+    display: flex;
+    justify-content: center;
 }
 
 #footer {
@@ -206,5 +239,73 @@ a {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 25px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .valoracion-clientes .contenedor-clientes {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }   
+}
+
+@media (max-width: 768px) {
+    .container-form {
+        width: 90%;
+        max-width: 768px;
+        margin-left: 10px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-form p {
+        width: 350px;
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-form a {
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        width: 350px;
+        margin-bottom: 15px;
+        color: black;
+        font-weight: 600;
+    }    
+}
+
+@media (max-width: 768px) {
+    .container-form form .campo, textarea {
+        width: 350px;
+        padding: 20px 10px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-form form .textarea {
+        max-width: 550px;
+        max-height: 150px;
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-form .enviar {
+        padding: 10px;
+        font-size: 20px;
+        background-color: grey;
+        color: black;
     }
 }
