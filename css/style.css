@@ -125,6 +125,10 @@ a {
     margin-bottom: 40px;
 }
 
+.direccionLocal iframe {
+    width: 900px;
+}
+
 .buscador {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -136,10 +140,26 @@ a {
     flex-direction: column;
     gap: 5rem;
 }
+
+.buscador .aside .categorias {
+    margin-left: 30px;
+}
+
 .buscador .marcas ul li {
     list-style-type: none;
     margin-top: 10px;
-    
+}
+
+.boton-categoria {
+    border-radius: 1rem;
+    font-weight: 500;
+    padding: 5px;
+    transition: background-color .2s, font-weight .2s;
+}
+
+.boton-categoria:hover {
+    background-color: rgb(187, 187, 187);
+    font-weight: 600;
 }
 
 .buscador .productos-tienda {
@@ -159,6 +179,17 @@ a {
     display: flex;
     justify-content: center;
     font-weight: 600;
+}
+
+.boton-comprar {
+    border-radius: 1rem;
+    padding: 10px;
+    transition: background-color .2s, font-weight .2s;
+}
+
+.boton-comprar:hover {
+    background-color: rgb(187, 187, 187);
+    font-weight: 700;
 }
 
 .sobre-nosotros {
@@ -188,6 +219,49 @@ a {
 }
 
 .carrousel-menu .menu-promo {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionDestacados {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@keyframes animacion {
+    0% {
+        border-radius: 1rem;
+        padding: 10px;
+    }
+    50% {
+        border-radius: 1rem;
+        padding: 10px;
+        background-color: rgb(187, 187, 187);
+    }
+    100% {
+        border-radius: 1rem;
+        padding: 10px;
+        background-color: rgb(187, 187, 187);
+        font-weight: 700;
+    }
+}
+
+.boton-destacados {
+    animation-name: animacion;   
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.destacados-productos {
     display: flex;
     justify-content: center;
 }
@@ -308,4 +382,27 @@ a {
         background-color: grey;
         color: black;
     }
+}
+
+@media (max-width: 768px) {
+    #sectionLocal .imagenesLocal {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sectionLocal .imagenesLocal img {
+        width: 300px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .direccionLocal iframe {
+        width: 300px;
+        height: 200px;
+    }    
 }
