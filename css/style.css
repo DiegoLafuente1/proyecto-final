@@ -335,18 +335,12 @@ a {
         grid-gap: 30px;
         margin-top: 50px;
     }
-}
-
-@media (max-width: 768px) {
     .container-form p {
         width: 350px;
         font-size: 20px;
         line-height: 1.6;
         margin-bottom: 30px;
     }
-}
-
-@media (max-width: 768px) {
     .container-form a {
         font-size: 20px;
         display: inline-block;
@@ -355,27 +349,18 @@ a {
         margin-bottom: 15px;
         color: black;
         font-weight: 600;
-    }    
-}
-
-@media (max-width: 768px) {
+    } 
     .container-form form .campo, textarea {
         width: 350px;
         padding: 20px 10px;
         font-size: 15px;
         margin-bottom: 40px;
     }
-}
-
-@media (max-width: 768px) {
     .container-form form .textarea {
         max-width: 550px;
         max-height: 150px;
         min-height: 180px;
     }
-}
-
-@media (max-width: 768px) {
     .container-form .enviar {
         padding: 10px;
         font-size: 20px;
@@ -391,18 +376,47 @@ a {
         margin-top: 20px;
         gap: 10px;
     }
-}
-
-@media (max-width: 768px) {
     #sectionLocal .imagenesLocal img {
         width: 300px;
         margin-left: 50px;
     }
-}
-
-@media (max-width: 768px) {
     .direccionLocal iframe {
         width: 300px;
         height: 200px;
-    }    
+    }  
 }
+
+@media (max-width: 768px) {
+    .buscador .productos-tienda .producto img {
+        width: 70%;
+        margin-left: 70px;
+    }
+    .buscador {
+        display: flex;
+        flex-direction: column;
+    }
+    .buscador .productos-tienda {
+        display: flex;
+        flex-direction: column;
+    }
+    .buscador .subtitulo {
+        display: flex;
+        justify-content: center;
+    }
+    .buscador .producto .boton-comprar {
+        padding: 3px;
+        width: 70%;
+        margin-left: 60px;
+    }
+    .buscador .aside .categorias {
+        display: flex;
+        justify-content: center;
+    }
+    .buscador .aside .marcas {
+        margin-left: 60px;
+    }
+    .buscador .aside {
+        gap: 0;
+    }
+}
+
