@@ -420,3 +420,38 @@ a {
     }
 }
 
+@media (max-width: 768px) {
+    #main .principal {
+        display: flex;
+        flex-direction: column;
+    }
+    #main .principal img {
+        width: 350px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    #main .principal iframe {
+        width: 350px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .carrousel-menu {
+        width: 350px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .carrousel-menu .menu-promo {
+        margin-top: 30px;
+    }
+    .sectionDestacados {
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionDestacados img {
+        width: 70%;
+        margin-left: 60px;
+    }
+    .destacados-productos {
+        margin-top: 60px;
+    }
+}
