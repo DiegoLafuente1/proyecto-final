@@ -1,0 +1,35 @@
+#footer {
+    width: 100%;
+    background-color: $colorPrincipal;
+    margin-top: auto;
+    .grupo {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 100px;
+        padding: 40px 0px;
+        .box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-weight: 600;
+            }
+        }
+        .redes a {
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: black;
+        }
+    }
+    .grupo-2 {
+        padding: 10px 10px;
+        text-align: center;
+    }
+}
